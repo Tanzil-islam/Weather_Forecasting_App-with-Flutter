@@ -14,14 +14,14 @@ class WeatherProvider with ChangeNotifier {
     notifyListeners();
 
     try {
-      // Fetch current weather and forecast concurrently
+      
       final weatherFuture = WeatherService.getWeather(city);
       final forecastFuture = WeatherService.getForecast(city);
 
-      // Wait for both futures to complete
+      
       final results = await Future.wait([weatherFuture, forecastFuture]);
 
-      // Assign results
+      
       currentWeather = results[0] as WeatherModel?;
       forecastData = results[1] as List<ForecastModel>?;
 
