@@ -8,7 +8,7 @@ class WeatherProvider with ChangeNotifier {
   String? errorMessage;
 
   Future<void> fetchWeather(String city) async {
-    // Set loading state
+    
     isLoading = true;
     errorMessage = null;
     notifyListeners();
@@ -25,22 +25,22 @@ class WeatherProvider with ChangeNotifier {
       currentWeather = results[0] as WeatherModel?;
       forecastData = results[1] as List<ForecastModel>?;
 
-      // Check if data was successfully fetched
+      
       if (currentWeather == null || forecastData == null) {
         errorMessage = 'Failed to fetch weather data';
       }
     } catch (e) {
-      // Capture any unexpected errors
+      
       errorMessage = 'An error occurred: ${e.toString()}';
       currentWeather = null;
       forecastData = null;
     } finally {
-      // Always set loading to false
+      
       isLoading = false;
       notifyListeners();
     }
   }
 
-  // Helper method to check if weather data is available
+  
   bool get hasWeatherData => currentWeather != null && forecastData != null;
 }
