@@ -23,8 +23,22 @@
 - **OpenWeather API** for weather data  
 
 ## **📂 Project Structure**  
+/lib  
+│── main.dart  # Entry point  
+│  
+├── screens/  # UI Screens  
+│   ├── home_screen.dart  
+│   ├── weather_details.dart  
+│  
+├── providers/  # State Management  
+│   ├── weather_provider.dart  
+│  
+├── services/  # API Calls  
+│   ├── weather_service.dart  
+│  
+├── constants/  # API Keys & Constants  
+│   ├── api_keys.dart  
 
-/lib ├── main.dart # Entry point ├── screens/ # UI Screens │ ├── home_screen.dart │ ├── weather_details.dart ├── providers/ # State Management │ ├── weather_provider.dart ├── services/ # API Calls │ ├── weather_service.dart ├── constants/ # API Keys & Constants │ ├── api_keys.dart
 
 
 ## **⚙️ Installation Guide**  
