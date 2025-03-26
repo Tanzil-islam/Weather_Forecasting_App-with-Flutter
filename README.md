@@ -1,4 +1,4 @@
-# 🌦️ Weather Forecasting App - Flutter 🌍📱  
+# 🌦️ Weather Forecasting App - Flutter 📱  
 
 🚀 **A visually appealing, cross-platform Weather Forecasting App built using Flutter.**  
 
