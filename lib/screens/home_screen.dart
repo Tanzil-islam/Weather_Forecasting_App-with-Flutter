@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
 
-    // Fetch weather data when the screen is first loaded
+    
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Provider.of<WeatherProvider>(
         context,
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen>
         child: SafeArea(
           child: Column(
             children: [
-              // Enhanced App Bar
+              
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16.0,
@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen>
                     IconButton(
                       icon: Icon(Icons.settings, color: _primaryColor),
                       onPressed: () {
-                        // Future settings implementation
+                        
                       },
                     ),
                   ],
