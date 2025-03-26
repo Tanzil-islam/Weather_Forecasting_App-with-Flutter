@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class WeatherCard extends StatelessWidget {
   final Map<String, dynamic> weatherData;
 
-  const WeatherCard(this.weatherData, {super.key});
+  const WeatherCard(this.weatherData, {super.key}); 
 
   @override
   Widget build(BuildContext context) {
