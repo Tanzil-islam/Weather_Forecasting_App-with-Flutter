@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.dispose();
   }
 
-  // Gradient background method
+  
   BoxDecoration _buildGradientBackground() {
     return BoxDecoration(
       gradient: LinearGradient(
@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
 
-              // City Search Bar
+              
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16.0,
@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
 
-              // Weather Content
+              
               Expanded(
                 child: Consumer<WeatherProvider>(
                   builder: (context, weatherProvider, child) {
