@@ -99,7 +99,7 @@ class WeatherService {
     }
   }
 
-  // Get 5-day Weather Forecast
+  
   static Future<List<ForecastModel>?> getForecast(String city) async {
     final url = Uri.parse(
       '$_baseUrl/forecast?q=$city&appid=$WEATHER_API_KEY&units=metric',
