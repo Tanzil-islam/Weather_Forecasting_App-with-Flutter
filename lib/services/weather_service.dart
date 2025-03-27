@@ -120,7 +120,7 @@ class WeatherService {
       if (response.statusCode == 200) {
         final Map<String, dynamic> data = json.decode(response.body);
 
-        // Filter forecast to get one entry per day
+        
         List<dynamic> forecastList = data['list'];
         Set<String> processedDates = {};
         List<ForecastModel> dailyForecasts = [];
