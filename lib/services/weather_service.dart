@@ -62,7 +62,6 @@ class WeatherService {
   static const String _baseUrl = 'https://api.openweathermap.org/data/2.5';
   static const int _timeoutDuration = 10; 
 
-  // Get Current Weather Data
   static Future<WeatherModel?> getWeather(String city) async {
     final url = Uri.parse(
       '$_baseUrl/weather?q=$city&appid=$WEATHER_API_KEY&units=metric',
